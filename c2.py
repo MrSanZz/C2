@@ -128,6 +128,8 @@ try:
                 send(p, loop=bytes, verbose=0)
                 scraper = cloudscraper.create_scraper()
                 scraper.get(ip, timeout=thrs)
+            except OSError:
+                continue
             except TypeError:
                 continue
             except socket.gaierror:
