@@ -9,33 +9,39 @@
     <summary><strong>How To Install:</strong></summary>
     -= Termux =-
 
-    1. pkg install python3
-    2. pkg install git
-    3. git clone https://github.com/MrSanZz/C2
-    4. cd C2
-    5. pip3 install -r requirements.txt
-    6. python3 c2.py
+    1. pkg update && pkg upgrade
+    2. pkg install curl
+    3. pkg install python3
+    4. pkg install git
+    5. git clone https://github.com/MrSanZz/C2
+    6. cd C2
+    7. pip3 install -r requirements.txt
+    8. python3 c2.py
 
     -= Ubuntu =-
 
-    1. sudo apt install python3
-    2. sudo apt install python3-pip
-    3. sudo apt install git
-    4. git clone https://github.com/MrSanZz/C2
-    5. cd C2
-    6. pip3 install -r requirements.txt
-    7. python3 c2.py
+    1. sudo apt-get update && sudo apt-get updgrade
+    2. sudo apt install python3
+    3. sudo apt install python3-pip
+    4. sudo apt install curl
+    5. sudo apt install git
+    6. git clone https://github.com/MrSanZz/C2
+    7. cd C2
+    8. pip3 install -r requirements.txt
+    9. python3 c2.py
 
     -= Kali Linux =-
 
-    1. apt install python3
-    2. apt install python3-pip
-    3. apt install git
-    4. git clone https://github.com/MrSanZz/C2
-    5. cd C2
-    6. pip3 install -r requirements.txt
-    7. python3 c2.py
+    1. apt update && apt upgrade
+    2. apt install curl
+    3. apt install python3
+    4. apt install python3-pip
+    5. apt install git
+    6. git clone https://github.com/MrSanZz/C2
+    7. cd C2
+    8. pip3 install -r requirements.txt
+    9. python3 c2.py
 
     -= Linux Mint =-
 
-    same like kali linux
+    Same as like kali linux
