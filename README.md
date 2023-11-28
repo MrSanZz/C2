@@ -7,10 +7,10 @@
 # Install Steps
 <details open>
     <summary><strong>How To Install:</strong></summary>
-    WATCH THIS !!
-    -The Best Option-
-    Byte Per Sec : 250 - 410 = Req : 55k [Verified]
-    Thread : 250 - 420 = Req : 50k+ [Verified]
+    WATCH THIS !!<br>
+    -The Best Option-<br>
+    Byte Per Sec : 250 - 410 = Req : 55k [Verified]<br>
+    Thread : 250 - 420 = Req : 50k+ [Verified]<br>
     
     -= Termux =-
 
