@@ -11,52 +11,7 @@ if os.name == "posix":
     os.system('clear')
 elif os.name == "nt":
     os.system('cls')
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
-#THIS IS MADE BY MrSanZz Team : JogjaXploit !#THIS IS MADE BY MrSanZz Team : JogjaXploit !
+
 logo = """
                                          _.oo.
                  _.u[[/;:,.         .odMMMMMM'
